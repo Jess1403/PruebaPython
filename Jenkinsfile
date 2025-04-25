@@ -5,7 +5,7 @@ pipeline {
         stage('Clonar código') {
             steps {
                 // Clona el repositorio desde GitHub
-                git 'https://github.com/tu-usuario/tu-repositorio.git'  // Cambia la URL por tu repositorio
+                git 'https://github.com/Jess1403/PruebaPython.git/'  // Cambia la URL por tu repositorio
             }
         }
         stage('Ejecutar calculadora') {

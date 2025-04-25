@@ -10,14 +10,16 @@ pipeline {
         }
         stage('Clonar código') {
             steps {
+                // Clona el repositorio desde GitHub
                 git 'https://github.com/Jess1403/PruebaPython.git/'
             }
         }
         stage('Ejecutar calculadora') {
             steps {
-                sh 'python3 main.py'
+                // Asegúrate de que el script main.py esté en el directorio correcto
+                sh 'ls -l'  // Lista los archivos del directorio actual
+                sh 'python3 main.py'  // Ejecuta el script Python
             }
         }
     }
 }
-

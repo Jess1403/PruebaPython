@@ -11,7 +11,7 @@ pipeline {
         stage('Ejecutar calculadora') {
             steps {
                 // Ejecuta el script de Python que tienes (en este caso calc.py)
-                sh 'python3 Calc.py'  // Asegúrate de que Jenkins tenga Python 3 instalado
+                sh 'python3 main.py'  // Asegúrate de que Jenkins tenga Python 3 instalado
             }
         }
     }

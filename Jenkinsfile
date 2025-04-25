@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Asegúrate de que el script main.py esté en el directorio correcto
                 sh 'ls -l'  // Lista los archivos del directorio actual
-                sh 'python3 main.py'  // Ejecuta el script Python
+                sh 'python3 Calc.py'  // Ejecuta el script Python
             }
         }
     }

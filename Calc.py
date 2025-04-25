@@ -19,12 +19,11 @@ def main():
     print("Bienvenido a la calculadora básica")
     print("Opciones: sumar, restar, multiplicar, dividir")
     
-    operacion = input("¿Qué operación deseas realizar? (sumar, restar, multiplicar, dividir): ").lower()
+    operacion = "sumar"  # Establece la operación de forma predeterminada
+    num1 = 5  # Número de prueba
+    num2 = 3  # Número de prueba
     
     if operacion in ["sumar", "restar", "multiplicar", "dividir"]:
-        num1 = float(input("Ingresa el primer número: "))
-        num2 = float(input("Ingresa el segundo número: "))
-        
         if operacion == "sumar":
             resultado = sumar(num1, num2)
         elif operacion == "restar":
